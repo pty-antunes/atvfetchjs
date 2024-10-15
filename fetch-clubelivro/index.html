@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folhas e Café - Cadastro</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="img/icone.png" type="image/png" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Cadastro</h1>
+      <form id="clubelivroform">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="genero">Gêneros Literários Favoritos:</label>
+            <div class="checkbox-group" id="genre">
+                <label><input type="checkbox" name="genre" value="ficcao"> Ficção</label>
+                <label><input type="checkbox" name="genre" value="fantasia"> Fantasia</label>
+                <label><input type="checkbox" name="genre" value="romance"> Romance</label>
+                <label><input type="checkbox" name="genre" value="biografia"> Biografia</label>
+                <label><input type="checkbox" name="genre" value="suspense"> Suspense</label>
+                <label><input type="checkbox" name="genre" value="ciencia_ficcao"> Ficção Científica</label>
+                <label><input type="checkbox" name="genre" value="horror"> Horror</label>
+                <label><input type="checkbox" name="genre" value="historico"> Histórico</label>
+                <label><input type="checkbox" name="genre" value="young_adult"> Young Adult</label>
+                <label><input type="checkbox" name="genre" value="poesia"> Poesia</label>
+                <label><input type="checkbox" name="genre" value="nao_ficcao"> Não Ficção</label>
+                <label><input type="checkbox" name="genre" value="outros"> Outros</label>
+            </div>
+            <br>
+    
+            <label for="p_evento">Você teria interesse em participar de eventos de discussão de livros?</label>
+            <select id="p_evento" name="p_evento" required>
+                <option value="online">Sim, online</option>
+                <option value="presencial">Sim, presencial</option>
+                <option value="nao">Não</option>
+            </select>
+            <br>
+
+        <button type="submit">Junte-se ao Clube</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
